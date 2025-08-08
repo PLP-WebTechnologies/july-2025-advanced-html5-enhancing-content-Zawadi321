@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Mastering the creation, structure and validation of Web Forms.">
+    
+    <style>
+        form{
+            border: 3px solid;
+            padding: 20px;
+            width: 600px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>HAVANA SPORTS CENTRE</h1>
+    </header>
+    <main>
+    <section>
+    
+        <h2>Sports Items</h2>
+        <ol>
+            <li>Kits and Wearables</li>
+            <ul>
+                <li>Sports jerseys</li>
+                <li>Running shoes</li>
+                <li>Headbands</li>
+                <li>Goalkeeper gloves</li>
+                <li>Tracksuit</li>
+                <li>Swimsuit</li>
+                <li>Compression wear</li>
+            </ul>
+            <li>Equipment and Gear</li>
+            <ul>
+                <li>Tennis racket</li>
+                <li>Cricket Bat</li>
+                <li>Football</li>
+                <li>Shuttlecock</li>
+                <li>Basket</li>
+                <li>Goal post</li>
+                <li>Table tennis paddle</li>
+            </ul>
+            <li>Accessories and Extras</li>
+            <ul>
+                <li>Water bottle</li>
+                <li>Yoga mat</li>
+                <li>Gym bag</li>
+                <li>Stop watch</li>
+                <li>Whistle</li>
+                <li>Jump rope</li>   
+            </ul>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Available Items</h3>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Sport</th>
+                    <th>Brand</th>
+                    <th>Price (KSH)</th>
+                    <th>Available Sizes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Running shoes</td>
+                    <td>Athletics</td>
+                    <td>Nike</td>
+                    <td>Ksh.4500</td>
+                    <td>35, 36, 37, 39,42</td>
+                </tr>
+                <tr>
+                    <td>Tracksuit</td>
+                    <td>Generak</td>
+                    <td>Adidas</td>
+                    <td>Ksh.2000</td>
+                    <td>XS, M, L, XL</td>
+                </tr>
+                <tr>
+                    <td>Tennis racket</td>
+                    <td>Tennis</td>
+                    <td>Wilson</td>
+                    <td>Ksh.3800</td>
+                    <td>One Size</td>
+                </tr>
+                <tr>
+                    <td>Cricket bat</td>
+                    <td>Cricket</td>
+                    <td>GM</td>
+                    <td>Ksh.1500</td>
+                    <td>Youth, Adult</td>
+                </tr>
+                <tr>
+                    <td>Yoga mat</td>
+                    <td>Yoga</td>
+                    <td>Gaiam</td>
+                    <td>Ksh.800</td>
+                    <td>Standard</td>
+                </tr>
+                <tr>
+                    <td>Swimsuit</td>
+                    <td>Swimming</td>
+                    <td>Speedo</td>
+                    <td>Ksh.850</td>
+                    <td>XS, S, M, L, XL</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+       <h2> Sports Equipment Video</h2>
+      <video src="Names of Sports Goods.mp4" controls
+       muted autoplay loop
+       width="700px" height="400px"></video>
+    </section>
+
+    <section>
+         <form action="submit">
+            <h2>Place Your Order Here</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your name" required> <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" 
+            placeholder="Enter your email address" required> <br><br>
+
+            <label for="phoneNo">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter exactly ten digits"
+            placeholder="Enter your phone number" required> <br><br>
+            </fieldset>
+       
+            <fieldset>
+            <legend>Select Items</legend>
+                <section>
+                    <h4>Running Shoes</h4>
+
+                    <label for="quantity">Quantity:</label> 
+                    <input type="number" id="quantity" value="quantity" min="1" placeholder="(in pairs)">
+                    <label for="size">Size:</label>
+                    <label for="size">36</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">37</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">39</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">42</label>
+                    <input type="checkbox" id="size" value="size">
+                </section>
+
+                <section>
+                    <h4>Tracksuit</h4>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="quantity" min="1" placeholder="(in pairs)">
+
+                    <label for="size">Size:</label>
+
+                    <label for="size">XS</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">S</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">M</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">XL</label>
+                    <input type="checkbox" id="size" value="size">
+                </section>
+                <section>
+                   <h4>Swimsuit</h4>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="quantity" min="1" >
+
+                    <label for="size">Size:</label>
+
+                    <label for="size">XS</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">S</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">M</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">L</label>
+                    <input type="checkbox" id="size" value="size">
+                    <label for="size">XL</label>
+                    <input type="checkbox" id="size" value="size">
+                </section>
+                <section>
+                    <h4>Yoga Mat</h4>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="quantity" min="1">
+                </div>
+                <div>
+                    <h4>Tennis Racket</h4>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="quantity" min="1" >
+                </section>
+            </fieldset>
+            <br><br>
+
+             <input type="radio" id="cart" name="done">
+            <label for="cart">Add to Cart</label>
+
+            <input type="radio" id="checkout" name="done">
+            <label for="checkout">Checkout</label> <br><br>
+
+            <label for="delivery">Choose Delivery Method:</label>
+            <select name="delivery" id="delivery">
+                <option value="pickup">Pickup from our store</option>
+                <option value="home">Home Delivery</option>
+            </select>
+            <br><br>
+            <a href="https://maps.apps.goo.gl">Click to view the Pickup location</a> 
+            <br><br>
+             <label for="comments">Leave a comment:</label> <br>
+           <textarea name="comments" id="comments" rows="4" cols="60" maxlength="300"></textarea>
+           
+            <br><br>
+            <button>Submit</button>
+
+        </form>
+    </section>
+    </main>
+    <footer>
+       <p> Incase of Complain or query, feel free to reach out <a href="https://gmail.com">havanasportscenter@gmail.com</a> </p>
+       <p> &copy Havana Sports Center </p>
+       <p> Terms and Conditions apply</p>
+    </footer>
+</html>
